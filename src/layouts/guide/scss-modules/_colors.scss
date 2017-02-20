@@ -1,0 +1,56 @@
+&-colors {
+  @import "../project/scss-modules/_colors.scss";
+
+  &-primary {
+    background: $red400;
+    border-top: 2em solid lighten($red400, 10%);
+    border-bottom: 2em solid darken($red400, 10%);
+    box-sizing: border-box;
+    color: #fff;
+    height: 18em;
+    padding: .5em;
+    width: 16em;
+    &:after {
+      content: '#{$red400}';
+    }
+  }
+  &-secondary {
+    background: $yellow400;
+    border-top: 1em solid lighten($yellow400, 10%);
+    border-bottom: 1em solid darken($yellow400, 10%);
+    box-sizing: border-box;
+    color: #fff;
+    height: 9em;
+    padding: .5em;
+    width: 8em;
+    &:after {
+      content: '#{$yellow400}';
+    }
+  }
+  &-tertiary {
+    background: $purple400;
+    border-top: 1em solid lighten($pink400, 10%);
+    border-bottom: 1em solid darken($pink400, 10%);
+    box-sizing: border-box;
+    color: #fff;
+    padding: .5em;
+    height: 9em;
+    width: 8em;
+    &:after {
+      content: '#{$purple400}';
+    }
+  }
+  &-gradient {
+    background-image: radial-gradient(ellipse at 80% 20%, $yellow400 0%, $red400 70%, $pink400 95%);
+    box-sizing: border-box;
+    color: #fff;
+    height: 18em;
+    margin: 0 0 0 2em;
+    padding: .5em;
+    width: 26em;
+  }
+  &-success {
+    background-color: #C1B54C;
+  }
+
+}

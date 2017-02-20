@@ -7,4 +7,7 @@
 .guide {
   @import "scss-modules/_header";
   @import "scss-modules/_content";
+  @import "scss-modules/_colors";
+  @import "scss-modules/_grid";
+  @import "patterns/thumbnails/_thumbnails";
 }
