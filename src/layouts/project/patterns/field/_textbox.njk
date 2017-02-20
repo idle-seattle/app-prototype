@@ -1,9 +1,0 @@
-{% macro textbox(label, id, type='text', placeholder, value) %}
-  {% if placeholder %}
-    {% set placeholder = 'placeholder="' + placeholder + '"' %}
-  {% endif %}
-  <div class="field textbox">
-    <label for="{{ id }}">{{ label }}</label>
-    <input type="text" value="{{ value }}" {{ placeholder }}>
-  </div>
-{% endmacro %}
