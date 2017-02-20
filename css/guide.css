@@ -502,7 +502,7 @@ body {
     content: "#A079C0"; }
 
 .guide-colors-gradient {
-  background-image: radial-gradient(ellipse at 80% 20%, #E9A448 0%, #E87255 80%, #DB5172 100%);
+  background-image: radial-gradient(ellipse at 80% 20%, #E9A448 0%, #E87255 70%, #DB5172 95%);
   box-sizing: border-box;
   color: #fff;
   height: 18em;
