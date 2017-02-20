@@ -1,0 +1,22 @@
+.body {
+  font-family: sans-serif; }
+
+.dropdown {
+  position: relative; }
+  .dropdown-launcher[aria-expanded="true"] + .dropdown-menu {
+    opacity: 1; }
+  .dropdown-menu {
+    background-color: #e0e0e0;
+    position: absolute;
+    top: 100%;
+    opacity: 0;
+    transition: opacity .125s ease-in-out;
+    z-index: 200; }
+    .dropdown-menu a {
+      display: block;
+      padding: .125em .25em; }
+
+.field.textbox > input {
+  display: block; }
+
+/*# sourceMappingURL=main.css.map */
