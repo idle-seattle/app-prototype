@@ -490,7 +490,7 @@ body {
     content: "#E9A448"; }
 
 .guide-colors-tertiary {
-  background: #DB5172;
+  background: #A079C0;
   border-top: 1em solid #e47b94;
   border-bottom: 1em solid #ce2b52;
   box-sizing: border-box;
@@ -499,16 +499,19 @@ body {
   height: 9em;
   width: 8em; }
   .guide-colors-tertiary:after {
-    content: "#DB5172"; }
+    content: "#A079C0"; }
 
 .guide-colors-gradient {
   background-image: radial-gradient(ellipse at 80% 20%, #E9A448 0%, #E87255 80%, #DB5172 100%);
   box-sizing: border-box;
   color: #fff;
-  height: 16em;
+  height: 18em;
   margin: 0 0 0 2em;
   padding: .5em;
-  width: 16em; }
+  width: 26em; }
+
+.guide-colors-success {
+  background-color: #C1B54C; }
 
 .guide-row {
   display: flex;
