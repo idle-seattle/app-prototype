@@ -49,8 +49,27 @@
     padding: .5em;
     width: 26em;
   }
+
   &-success {
-    background-color: #C1B54C;
+    background-color: $green400;
+    height: 1rem;
+    margin: .5rem 0 0 0;
+    width: 10rem;
   }
+
+  &-offwhite {
+    background-color: $offwhite;
+    height: 1rem;
+    margin: .5rem 0 0 0;
+    width: 10rem;
+  }
+
+  &-cornflower {
+    background-color: $cornflower400;
+    height: 1rem;
+    margin: .5rem 0 0 0;
+    width: 10rem;
+  }
+
 
 }
