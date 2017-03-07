@@ -1,9 +1,6 @@
-// Import SASS variables first
-@import 'scss-modules/_colors';
+// Import CSS variables first
+@import 'css-modules/_colors';
 
 .body {
   font-family: sans-serif;
 }
-
-@import 'patterns/dropdown/_dropdown';
-@import 'patterns/field/_textbox';

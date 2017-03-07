@@ -3,6 +3,8 @@ import babel from 'gulp-babel'
 import browserSync from 'browser-sync'
 import concat from 'gulp-concat'
 import nunjucks from 'gulp-nunjucks-render'
+import postCss from 'gulp-postcss'
+import cssNext from 'postcss-cssnext'
 import sass from 'gulp-sass'
 import sourcemaps from 'gulp-sourcemaps'
 import uglify from 'gulp-uglify'
@@ -21,11 +23,8 @@ const css = {
   project: () => {
     return css.compile('src/layouts/project/main.scss')
   },
-  guide: () => {
-    return css.compile('src/layouts/guide/guide.scss')
-  },
-  compile: (path) => {
-    return gulp.src(path)
+  compile: () => {
+    return gulp.src('src/layouts/guide/guide.scss')
       .pipe(sourcemaps.init())
       .pipe(sass())
       .pipe(sourcemaps.write('./'))
