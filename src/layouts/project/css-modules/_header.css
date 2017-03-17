@@ -1,0 +1,5 @@
+.idle {
+  &-header {
+    background-color: var(--red400)
+  }
+}

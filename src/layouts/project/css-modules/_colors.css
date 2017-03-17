@@ -1,24 +1,26 @@
-$red400: #E87255;
+:root {
+  --red400: #E87255;
 
-$orange400: #E9A448;
+  --orange400: #E9A448;
 
-$pink400: #DB5172;
+  --pink400: #DB5172;
 
-$purple400: #A079C0;
+  --purple400: #A079C0;
 
-$cornflower400: #63AECF;
+  --cornflower400: #63AECF;
 
-$green400: #C1B54C;
+  --green400: #C1B54C;
 
-$offwhite: #F4F4F1;
+  --offwhite: #F4F4F1;
 
-$gray400: #82969B;
+  --gray400: #82969B;
 
-$mutedColor200: #282828;
-$mutedColor300: #424242;
-$mutedColor400: #666666;
-$mutedColor500: #888;
-$mutedColor600: #a0a0a0;
-$mutedColor700: #c2c2c2;
-$mutedColor800: #e0e0e0;
-$mutedColor900: #f8f8f8;
+  --mutedColor200: #282828;
+  --mutedColor300: #424242;
+  --mutedColor400: #666666;
+  --mutedColor500: #888;
+  --mutedColor600: #a0a0a0;
+  --mutedColor700: #c2c2c2;
+  --mutedColor800: #e0e0e0;
+  --mutedColor900: #f8f8f8;
+}

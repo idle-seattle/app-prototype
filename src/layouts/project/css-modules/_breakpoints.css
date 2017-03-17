@@ -1,4 +1,4 @@
-$breakpointSmall: 30rem;
-$breakpointMedium: 45rem;
-$breakpointLarge: 60rem;
-$breakpointXlarge: 90rem;
+@custom-media --small: 30rem;
+@custom-media --medium: 45rem;
+@custom-media --large: 60rem;
+@custom-media --xlarge: 90rem;

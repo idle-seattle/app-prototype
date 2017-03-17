@@ -1,6 +1,9 @@
-// Import CSS variables first
 @import 'css-modules/_colors';
+@import 'css-modules/_normalize';
+
+@import 'css-modules/_header';
 
 .body {
+  background: var(--offwhite);
   font-family: sans-serif;
 }

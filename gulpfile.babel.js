@@ -5,6 +5,11 @@ import concat from 'gulp-concat'
 import nunjucks from 'gulp-nunjucks-render'
 import postCss from 'gulp-postcss'
 import cssNext from 'postcss-cssnext'
+import cssVar from 'postcss-custom-properties'
+import cssImport from 'postcss-import'
+import cssNesting from 'postcss-nesting'
+import cssMediaQueries from 'postcss-custom-media'
+import cssNano from 'cssnano'
 import sass from 'gulp-sass'
 import sourcemaps from 'gulp-sourcemaps'
 import uglify from 'gulp-uglify'
@@ -21,9 +26,20 @@ function html() {
 
 const css = {
   project: () => {
-    return css.compile('src/layouts/project/main.scss')
+    const plugins = [
+      cssImport(),
+      cssNext(),
+      cssVar(),
+      cssNesting(),
+      cssMediaQueries(),
+      cssNano({autoprefixer: false, discardComments: { removeAll: true}}),
+    ]
+    return gulp.src('src/layouts/project/main.css')
+      .pipe(postCss(plugins))
+      .pipe(gulp.dest('./dist/css'))
+      .pipe(browserSync.stream())
   },
-  compile: () => {
+  guide: () => {
     return gulp.src('src/layouts/guide/guide.scss')
       .pipe(sourcemaps.init())
       .pipe(sass())
@@ -70,7 +86,7 @@ function dev() {
     server: "./dist"
   })
   gulp.watch('src/**/*.njk', html).on('end', reload)
-  gulp.watch('src/layouts/project/**/*.scss', css.project).on('end', reload)
+  gulp.watch('src/layouts/project/**/*.css', css.project).on('end', reload)
   gulp.watch('src/layouts/guide/**/*.scss', css.guide).on('end', reload)
   gulp.watch('src/layouts/project/**/*.js', js.project).on('end', reload)
   gulp.watch('src/layouts/guide/**/*.js', js.guide).on('end', reload)
