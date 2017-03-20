@@ -403,7 +403,7 @@ template {
   display: none; }
 
 html:before {
-  content: "small";
+  content: 'small';
   display: none; }
   @media screen and (min-width: 20rem) {
     html:before {
@@ -422,30 +422,46 @@ body {
 .guide-header {
   background-image: linear-gradient(45deg, #E87255 0%, #E9A448 100%);
   display: flex; }
-  @media screen and (min-width: 20rem) {
+  @media screen and (min-width: 48rem) {
     .guide-header .btn-open {
       display: none; } }
 
 .guide-logo {
   margin: .5rem 2rem .5rem .5rem; }
 
-.guide-nav1[aria-expanded="false"] {
-  display: none; }
-
-.guide-nav1 > a {
-  color: #fff; }
-
-@media screen and (min-width: 20rem) {
-  .guide-nav1 {
+.guide-nav1 {
+  background: #888;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity .25s ease-in-out; }
+  .guide-nav1 > a {
+    color: #fff; }
+  .guide-nav1-container {
     display: flex; }
-    .guide-nav1 > a {
-      align-items: center;
-      border-right: 1px solid #888;
+    .guide-nav1-container .btn-open[aria-expanded='false'] + .guide-nav1 {
+      opacity: 0; }
+  @media screen and (min-width: 48rem) {
+    .guide-nav1 {
+      flex-direction: row;
+      position: static;
+      background: none;
       display: flex;
-      padding: 0 .5em;
-      text-decoration: none; }
-    .guide-nav1 .btn-close {
-      display: none; } }
+      flex-direction: row;
+      position: static; }
+      .guide-nav1-container {
+        display: flex; }
+      .guide-nav1 > a {
+        align-items: center;
+        border-right: 1px solid #888;
+        display: flex;
+        padding: 0 .5em;
+        text-decoration: none; }
+      .guide-nav1 .btn-close {
+        display: none; } }
 
 .guide-content {
   margin: 2rem 0; }
@@ -511,7 +527,22 @@ body {
   width: 26em; }
 
 .guide-colors-success {
-  background-color: #C1B54C; }
+  background-color: #C1B54C;
+  height: 1rem;
+  margin: .5rem 0 0 0;
+  width: 10rem; }
+
+.guide-colors-offwhite {
+  background-color: #F4F4F1;
+  height: 1rem;
+  margin: .5rem 0 0 0;
+  width: 10rem; }
+
+.guide-colors-cornflower {
+  background-color: #63AECF;
+  height: 1rem;
+  margin: .5rem 0 0 0;
+  width: 10rem; }
 
 .guide-row {
   display: flex;
