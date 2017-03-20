@@ -28,11 +28,10 @@ const css = {
   project: () => {
     const plugins = [
       cssImport(),
-      cssNext(),
       cssVar(),
-      cssNesting(),
       cssMediaQueries(),
-      cssNano({autoprefixer: false, discardComments: { removeAll: true}}),
+      cssNesting(),
+//      cssNano({autoprefixer: false, discardComments: { removeAll: true}}),
     ]
     return gulp.src('src/layouts/project/main.css')
       .pipe(postCss(plugins))

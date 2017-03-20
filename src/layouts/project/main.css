@@ -1,6 +1,9 @@
 @import 'css-modules/_colors';
+@import 'css-modules/_breakpoints';
+@import 'css-modules/_fonts';
 @import 'css-modules/_normalize';
 
+@import 'css-modules/_html-elements';
 @import 'css-modules/_header';
 
 .body {
