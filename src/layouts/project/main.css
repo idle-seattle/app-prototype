@@ -1,9 +1,12 @@
-// Import SASS variables first
-@import 'scss-modules/_colors';
+@import 'css-modules/_colors';
+@import 'css-modules/_breakpoints';
+@import 'css-modules/_fonts';
+@import 'css-modules/_normalize';
+
+@import 'css-modules/_html-elements';
+@import 'css-modules/_header';
 
 .body {
+  background: var(--offwhite);
   font-family: sans-serif;
 }
-
-@import 'patterns/dropdown/_dropdown';
-@import 'patterns/field/_textbox';

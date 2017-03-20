@@ -1,0 +1,32 @@
+{% import "./patterns/buttons/_btn.njk" as btn %}
+<!doctype html>
+<html lang="en-us" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    {% block styles %}{% endblock %}
+    <script type="text/javascript" src="js/core.js" async></script>
+  </head>
+  <body class="idle-body">
+    <header class="idle-header">
+      <img src="img/idle-logo.svg" class="idle-logo">
+      <div class="idle-nav1-container">
+        <button class="btn-open">Navigation</button>
+        <nav class="idle-nav1">
+          {{ btn.close() }}
+          <a href="./get-involved.html">Get Involved</a>
+          <a href="./programs.html">Programs</a>
+          <a href="./support.html">Support</a>
+          <div class="idle-account"></div>
+        </nav>
+      </div>
+    </header>
+    <main class="idle-main" id="main">
+        {% block main %}{% endblock %}
+    </main>
+  </body>
+</html>

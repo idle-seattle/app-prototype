@@ -1,0 +1,21 @@
+html {
+  &:before {
+    content: 'small';
+    display: none;
+    @media (--medium) {
+      content: 'medium';
+    }
+    @media (--large) {
+      content: 'large';
+    }
+    @media (--xlarge) {
+      content: 'xl';
+    }
+  }
+}
+button {
+  font-family: var(--font-base);
+}
+.idle-body {
+  font-family: var(--font-base);
+}
